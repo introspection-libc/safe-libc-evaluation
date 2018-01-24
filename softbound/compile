@@ -1,0 +1,27 @@
+#!/bin/sh
+
+SAFEC=$HOME/git/safec
+
+compile_asan() {
+	CLANG_PATH=$HOME/git/llvm-build/bin
+	CFLAGS="-fsanitize=address -fno-common -fPIC -Wall -O3 -g -D_POSIX_C_SOURCE=200809L"
+	LDFLAGS="-pie -Wl,-E -include $SAFEC/libc.h"
+
+	$CLANG_PATH/clang $CFLAGS $SAFEC/libc.c -c -o $SAFEC/libc.o
+	$CLANG_PATH/clang $CFLAGS $LDFLAGS $SAFEC/libc.o "$@"
+}
+
+compile_softboundcets() {
+	CLANG_PATH=$HOME/git/softboundcets-3.8.0/llvm-38/build/bin
+	CFLAGS="-fsoftboundcets -Wall -O3 -g"
+	LDFLAGS="-fsoftboundcets -Wl,-E -L$HOME/git/softboundcets-3.8.0/runtime -include $SAFEC/libc.h"
+	LIBS="$SAFEC/libc-softbound.o $SAFEC/softbound.c -lm -lrt -lsoftboundcets_rt"
+
+	$CLANG_PATH/clang $CFLAGS -DNO_STACKTRACE -c -o $SAFEC/libc-softbound.o $SAFEC/libc.c
+	$CLANG_PATH/clang $CFLAGS -c -o $SAFEC/softbound.o $SAFEC/softbound.c
+	$CLANG_PATH/clang $CFLAGS $LDFLAGS "$@" $LIBS
+}
+
+compile_softboundcets -o cve-2017-14493-code cve-2017-14493-code.c
+compile_softboundcets -o cve-2017-14496-code cve-2017-14496-code.c
+compile_softboundcets -o lightftp lightftp.c
