@@ -23,7 +23,6 @@ compile_softboundcets() {
 	$CLANG_PATH/clang $CFLAGS $LDFLAGS "$@" $LIBS
 }
 
-compile_softboundcets -o softbound-test softbound-test.c
 compile_softboundcets -o cve-2017-14493-code cve-2017-14493-code.c
 compile_softboundcets -o cve-2017-14496-code cve-2017-14496-code.c
 compile_softboundcets -o lightftp lightftp.c

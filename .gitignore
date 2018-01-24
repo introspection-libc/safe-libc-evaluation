@@ -2,5 +2,7 @@
 softbound/cve-2017-14493-code
 softbound/cve-2017-14496-code
 softbound/lightftp
+softbound/graphicsmagick
+softbound/libxml2
 benchmark/strlen
 benchmark/strlen-normal
