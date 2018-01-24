@@ -7,7 +7,8 @@ compile_asan() {
 	CFLAGS="-fsanitize=address -fno-common -fPIC -Wall -O3 -g -D_POSIX_C_SOURCE=200809L"
 	LDFLAGS="-pie -Wl,-E -include $SAFEC/libc.h"
 
-	$CLANG_PATH/clang $CFLAGS $SAFEC/libc.c -c -o $SAFEC/libc.o
+	#$CLANG_PATH/clang $CFLAGS $SAFEC/libc.c -c -o $SAFEC/libc.o
+
 	$CLANG_PATH/clang $CFLAGS $LDFLAGS $SAFEC/libc.o "$@"
 }
 
@@ -22,6 +23,9 @@ compile_softboundcets() {
 	$CLANG_PATH/clang $CFLAGS $LDFLAGS "$@" $LIBS
 }
 
+compile_softboundcets -o softbound-test softbound-test.c
 compile_softboundcets -o cve-2017-14493-code cve-2017-14493-code.c
 compile_softboundcets -o cve-2017-14496-code cve-2017-14496-code.c
 compile_softboundcets -o lightftp lightftp.c
+compile_softboundcets -o graphicsmagick graphicsmagick.c
+compile_softboundcets -o libxml2 libxml2.c
