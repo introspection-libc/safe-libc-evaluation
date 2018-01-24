@@ -1,0 +1,15 @@
+#!/bin/sh
+SAFEC=$HOME/git/safec
+CLANG_PATH=$HOME/git/llvm-build/bin
+$CLANG_PATH/clang -fsanitize=address -fno-common -fPIC -Wall -O3 -g -D_POSIX_C_SOURCE=200809L $SAFEC/libc.c -c -o $SAFEC/libc.o
+
+compile() {
+	$CLANG_PATH/clang -fsanitize=address -fno-common -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L -DSAFEC -Wl,-E $SAFEC/libc.o "$@"
+}
+
+compile_normal() {
+	$CLANG_PATH/clang -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
+}
+
+compile -o strlen strlen.c
+compile_normal -o strlen-normal strlen.c
