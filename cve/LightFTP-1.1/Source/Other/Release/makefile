@@ -2,6 +2,11 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SAFEC := $(HOME)/git/safec
+CC := $(HOME)/git/llvm-build/bin/clang
+CFLAGS := -fsanitize=address -O3 -g -include $(SAFEC)/libc.h
+LDFLAGS := -fsanitize=address -O3 -g -Wl,-E
+
 -include ../makefile.init
 
 RM := rm -rf
@@ -19,6 +24,8 @@ endif
 
 -include ../makefile.defs
 
+LIBS += $(SAFEC)/libc.o
+
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
@@ -28,7 +35,7 @@ all: fftp
 fftp: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "fftp" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CC) $(LDFLAGS) -o "fftp" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
