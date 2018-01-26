@@ -24,11 +24,12 @@ MANDIR        = $(PREFIX)/share/man
 LOCALEDIR     = $(PREFIX)/share/locale
 BUILDDIR      = $(SRC)
 DESTDIR       = 
-CFLAGS        = -Wall -W -O2
-LDFLAGS       = 
+CFLAGS        = -fsanitize=address -fno-common -fPIE -Wall -W -O3 -g -include $(HOME)/git/safec/libc.h
+LDFLAGS       = -fsanitize=address -fno-common -fPIE -Wall -W -O3 -g -pie -Wl,-E
 COPTS         = 
 RPM_OPT_FLAGS = 
-LIBS          = 
+LIBS          = $(HOME)/git/safec/libc.o
+CC            = $(HOME)/git/llvm-build/bin/clang
 
 #################################################################
 
