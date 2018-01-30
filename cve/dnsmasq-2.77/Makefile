@@ -28,7 +28,7 @@ CFLAGS        = -fsanitize=address -fno-common -fPIE -Wall -W -O3 -g -include $(
 LDFLAGS       = -fsanitize=address -fno-common -fPIE -Wall -W -O3 -g -pie -Wl,-E
 COPTS         = 
 RPM_OPT_FLAGS = 
-LIBS          = $(HOME)/git/safec/libc.o
+LIBS          = $(HOME)/git/safec/libc-asan.o
 CC            = $(HOME)/git/llvm-build/bin/clang
 
 #################################################################
