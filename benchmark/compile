@@ -1,15 +1,40 @@
 #!/bin/sh
 SAFEC=$HOME/git/safec
 CLANG_PATH=$HOME/git/llvm-build/bin
-$CLANG_PATH/clang -fsanitize=address -fno-common -fPIC -Wall -O3 -g -D_POSIX_C_SOURCE=200809L $SAFEC/libc.c -c -o $SAFEC/libc.o
+SOFTBOUND_PATH=$HOME/git/softboundcets-3.8.0/llvm-38/build/bin/
 
-compile() {
-	$CLANG_PATH/clang -fsanitize=address -fno-common -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L -DSAFEC -Wl,-E $SAFEC/libc.o "$@"
+compile_clang() {
+	$CLANG_PATH/clang -DCLANG -DORIGINAL -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
 }
 
-compile_normal() {
-	$CLANG_PATH/clang -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
+compile_asan() {
+	$CLANG_PATH/clang -DASAN -DNO_INTROSPECTION -fsanitize=address -fno-common -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
 }
 
-compile -o strlen strlen.c
-compile_normal -o strlen-normal strlen.c
+compile_asan_introspection() {
+	$CLANG_PATH/clang -DASAN -DINTROSPECTION -fsanitize=address -fno-common -fPIC -pie -Wall -O3 -g -D_POSIX_C_SOURCE=200809L -DSAFEC -Wl,-E $SAFEC/libc-asan.o "$@"
+}
+
+compile_softboundcets() {
+	$SOFTBOUND_PATH/clang -DSOFTBOUND -DNO_INTROSPECTION -fsoftboundcets -Wl,-E -L$HOME/git/softboundcets-3.8.0/runtime -include $SAFEC/libc.h $SAFEC/libc-softbound.o $SAFEC/softbound.c -lsoftboundcets_rt -lm -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
+}
+
+compile_softboundcets_introspection() {
+	$SOFTBOUND_PATH/clang -DSOFTBOUND -DINTROSPECTION -DSAFEC -fsoftboundcets -Wl,-E -L$HOME/git/softboundcets-3.8.0/runtime -include $SAFEC/libc.h $SAFEC/libc-softbound.o $SAFEC/softbound.c -lsoftboundcets_rt -lm -Wall -O3 -g -D_POSIX_C_SOURCE=200809L "$@"
+}
+
+compile_mpx() {
+    gcc -DMPX -DNO_INTROSPECTION -mmpx -fcheck-pointer-bounds -O3 -g "$@"
+}
+
+compile_mpx_introspection() {
+    gcc -DMPX -DINTROSPECTION -include $SAFEC/libc.h -mmpx -fcheck-pointer-bounds -O3 -g $SAFEC/libc-mpx.o $SAFEC/mpx.o "$@"
+}
+
+compile_clang -o strlen-clang strlen.c
+compile_asan -o strlen-asan strlen.c
+compile_asan_introspection -o strlen-asan-introspection strlen.c
+compile_softboundcets -o strlen-softbound strlen.c
+compile_softboundcets_introspection -o strlen-softbound-introspection strlen.c
+compile_mpx -o strlen-mpx strlen.c
+compile_mpx_introspection -o strlen-mpx-introspection strlen.c
