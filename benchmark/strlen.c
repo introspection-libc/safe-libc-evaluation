@@ -20,6 +20,32 @@ struct timespec diff(struct timespec start, struct timespec end)
 
 #define THE_CLOCK	CLOCK_PROCESS_CPUTIME_ID
 
+#ifdef SOFTBOUND
+    #define SYSTEM_TYPE "softbound+cets"
+#endif
+#ifdef CLANG 
+    #define SYSTEM_TYPE "clang"
+#endif
+#ifdef ASAN
+    #define SYSTEM_TYPE "asan"
+#endif
+#ifdef MPX
+    #define SYSTEM_TYPE "mpx"
+#endif
+
+
+#ifdef INTROSPECTION
+    #define INTROSPECTION_TYPE "introspection"
+#endif
+#ifdef NO_INTROSPECTION
+    #define INTROSPECTION_TYPE "original"
+#endif
+#ifdef ORIGINAL
+    #define INTROSPECTION_TYPE ""
+#endif
+
+
+
 int main(int argc, char** argv)
 {
 	struct timespec time1;
@@ -27,18 +53,9 @@ int main(int argc, char** argv)
 	struct timespec dt;
 	volatile size_t result;
 
-	unsigned long old;
-	unsigned long t1 = 0;
 
-	double dt1;
-
-#ifdef SAFEC
-	unsigned long t2 = 0;
-	double dt2;
-#endif
-
-	unsigned long i;
-	unsigned long runs = 5000;
+	volatile unsigned long i;
+	unsigned long runs = 5000000;
 
 	int size;
 	char* value;
@@ -55,59 +72,19 @@ int main(int argc, char** argv)
 	memset(value, 'A', size);
 	value[size - 1] = 0;
 
+    clock_gettime(THE_CLOCK, &time1);
 	for(i = 0; i < runs; i++) {
-		clock_gettime(THE_CLOCK, &time1);
-		result = strlen(value);
-		clock_gettime(THE_CLOCK, &time2);
-		dt = diff(time1, time2);
-#ifdef PRINT_RUNS
-		printf("normal: %lu:%lu (result=%lu)\n", dt.tv_sec, dt.tv_nsec, result);
-#endif
-
-		if(dt.tv_sec) {
-			printf("error! strlen took too long!\n");
-			return 1;
-		}
-
-		old = t1;
-		t1 += dt.tv_nsec;
-		if(old > t1) {
-			printf("error! overflow!\n");
-			return 1;
-		}
-	}
-
-	dt1 = (double) t1 / (double) runs;
-
 #ifdef SAFEC
-	for(i = 0; i < runs; i++) {
-		clock_gettime(THE_CLOCK, &time1);
 		result = __safe_strlen(value);
-		clock_gettime(THE_CLOCK, &time2);
-		dt = diff(time1, time2);
-#ifdef PRINT_RUNS
-		printf("safe: %lu:%lu (result=%lu)\n", dt.tv_sec, dt.tv_nsec, result);
-#endif
-
-		if(dt.tv_sec) {
-			printf("error! strlen took too long!\n");
-			return 1;
-		}
-
-		old = t2;
-		t2 += dt.tv_nsec;
-		if(old > t2) {
-			printf("error! overflow!\n");
-			return 1;
-		}
-	}
-
-	dt2 = (double) t2 / (double) runs;
-
-	printf("%g vs %g: %g\n", dt1, dt2, dt2 / dt1);
 #else
-	printf("%g\n", dt1);
+		result = strlen(value);
 #endif
+    }
+    clock_gettime(THE_CLOCK, &time2);
+    dt = diff(time1, time2);
+    long milliseconds = dt.tv_sec * 1000 + dt.tv_nsec/1000000;
+    printf("%s;%s;%lu\n", SYSTEM_TYPE, INTROSPECTION_TYPE, milliseconds);
+	
 
 	free(value);
 
