@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import subprocess
 import statistics
 
@@ -15,7 +16,7 @@ for executable in executables:
     for string_length in string_lengths:
         milliseconds = []
         for i in range(10):
-            p = subprocess.Popen('./' + executable + ' ' + str(string_length), shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            p = subprocess.Popen('./' + executable + ' ' + str(string_length), shell=True, stdout=subprocess.PIPE)
             line = p.stdout.read().decode("utf-8").rstrip('\n')
             system = line.split(';')[0]
             introspection_type = line.split(';')[1]
