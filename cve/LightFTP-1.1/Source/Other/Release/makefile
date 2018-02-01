@@ -24,7 +24,7 @@ endif
 
 -include ../makefile.defs
 
-LIBS += $(SAFEC)/libc.o
+LIBS += $(SAFEC)/libc-asan.o
 
 # Add inputs and outputs from these tool invocations to the build variables 
 
