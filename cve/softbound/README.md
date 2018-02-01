@@ -1,0 +1,1 @@
+As SoftBound failed to build or execute the projects, we extracted the fragments where the error occured. These can be executed by SoftBound and are available at https://github.com/introspection-libc/safe-libc-evaluation/tree/master/cve-extracted-fragments.
