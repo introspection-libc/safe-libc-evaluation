@@ -1,0 +1,1132 @@
+[memset] overflow: 12329072 byte(s)
+[backtrace] 13 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlRMutexUnlock+0x1bb) [0x7fb9d8ba21e6]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(__xmlInitializeDict+0xe1) [0x7fb9d8d3084d]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(+0x2c2aee) [0x7fb9d8ba1aee]
+#5 /lib/x86_64-linux-gnu/libpthread.so.0(+0xea99) [0x7fb9d75b3a99]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlIsMainThread+0x68) [0x7fb9d8ba1ced]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(__xmlGenericError+0x1b) [0x7fb9d8b9f412]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0x4e) [0x7fb9d896a014]
+#9 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#11 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#12 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331328 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x202) [0x7fb9d894b5d2]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331360 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x202) [0x7fb9d894b5d2]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331408 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x237) [0x7fb9d894b607]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331440 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x237) [0x7fb9d894b607]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331488 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x281) [0x7fb9d894b651]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331520 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x281) [0x7fb9d894b651]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331568 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x2cb) [0x7fb9d894b69b]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331600 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x2cb) [0x7fb9d894b69b]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331648 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x306) [0x7fb9d894b6d6]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331680 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x306) [0x7fb9d894b6d6]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331728 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x33b) [0x7fb9d894b70b]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331760 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x33b) [0x7fb9d894b70b]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331808 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x370) [0x7fb9d894b740]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331840 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x370) [0x7fb9d894b740]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memcpy] overflow: 12331888 byte(s)
+[backtrace] 11 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memcpy+0x72) [0x4180b0]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrndup+0xb1) [0x7fb9d8baf64d]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlStrdup+0x81) [0x7fb9d8baf599]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x27f) [0x7fb9d894ba05]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x39e) [0x7fb9d894b76e]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#7 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#9 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#10 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[memset] overflow: 12331920 byte(s)
+[backtrace] 9 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_memset+0x6c) [0x417e0e]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlNewCharEncodingHandler+0x346) [0x7fb9d894bacc]
+#3 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitCharEncodingHandlers+0x39e) [0x7fb9d894b76e]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlInitParser+0xa7) [0x7fb9d896a06d]
+#5 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/libxml2.so.2(xmlCheckVersion+0x37) [0x7fb9d89652dc]
+#6 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405fce]
+#7 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#8 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406022]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4060b7]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406103]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406164]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4061b0]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40621b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406267]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4062c8]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406314]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406384]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4063d0]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406433]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40647f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4064ef]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40653b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4065ad]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4065f9]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40665a]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4066a6]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406707]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406753]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4067b4]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406800]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40688f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4068db]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40693c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40698c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4069d8]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406a6f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406abb]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406b1c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406b68]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406bc9]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406c15]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406c76]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406cc2]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406d23]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406d6f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406ddf]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406e2b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406e9b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406ee7]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406f66]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x406fb2]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407022]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40706e]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4070ed]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407139]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4071ee]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40723a]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4072ef]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40733b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40739c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4073e8]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407449]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407495]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4074f6]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407542]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4075a3]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4075ef]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407671]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4076bd]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40771e]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40776a]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4077d5]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407821]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407882]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4078ce]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40792f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40797b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4079eb]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407a37]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407ab6]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407b02]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407b83]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407bcf]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407c3b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407c87]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407d0b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407d57]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407dda]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407e26]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407e9f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407eeb]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407f5b]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x407fa7]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408017]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408063]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4080d3]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40811f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408180]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4081cc]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40822d]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408279]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408330]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40837c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4083f7]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408443]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408525]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408571]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4085e7]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408633]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40872e]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40877a]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4087db]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408827]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408897]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4088e3]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408953]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40899f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408a00]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408a4c]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408aad]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408af9]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408bae]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408bfa]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408ca0]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408cec]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408d92]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408dde]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408e52]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408e9e]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408f01]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408f4d]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408fae]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x408ffa]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40908a]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4090d6]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40916d]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4091b9]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x40925f]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+[strcmp] overflow: 140721997676954 byte(s) (s1)
+[backtrace] 5 frames
+#0 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x418d01]
+#1 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint(__safe_strcmp+0xc8) [0x4183b5]
+#2 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x4092ab]
+#3 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fb9d812b830]
+#4 /home/manuel/git/safe-libc-evaluation/cve/libxml2-v2.9.4/.libs/lt-xmllint() [0x405379]
+Unknown option --valid
