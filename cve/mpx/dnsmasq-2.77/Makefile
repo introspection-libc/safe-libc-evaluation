@@ -24,7 +24,7 @@ MANDIR        = $(PREFIX)/share/man
 LOCALEDIR     = $(PREFIX)/share/locale
 BUILDDIR      = $(SRC)
 DESTDIR       = 
-CFLAGS        = -include $(HOME)/git/safec/libc.h -mmpx -fcheck-pointer-bounds -Wall -W -O3 -g 
+CFLAGS        = -include $(HOME)/git/safec/libc.h -mmpx -fcheck-pointer-bounds -Wall -W -O3 -g -D_FORTIFY_SOURCE=0
 LDFLAGS       = -Wl,--no-as-needed -Wall -W -O3 -g -lmpx -lmpxwrappers
 COPTS         = 
 RPM_OPT_FLAGS = 

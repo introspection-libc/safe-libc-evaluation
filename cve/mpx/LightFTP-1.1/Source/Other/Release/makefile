@@ -4,8 +4,8 @@
 
 SAFEC := $(HOME)/git/safec
 CC := gcc
-CFLAGS := -include $(SAFEC)/libc.h -mmpx -fcheck-pointer-bounds -g 
-LDFLAGS := -Wl,--no-as-needed -lmpx -lmpxwrappers -g 
+CFLAGS := -mmpx -fcheck-pointer-bounds -g -include $(SAFEC)/libc.h -D_FORTIFY_SOURCE=0
+LDFLAGS := -Wl,--no-as-needed -lmpx -lmpxwrappers -g
 
 -include ../makefile.init
 
