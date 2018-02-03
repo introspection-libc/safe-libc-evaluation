@@ -28,7 +28,7 @@ CFLAGS        = -mmpx -fcheck-pointer-bounds -Wall -W -O3 -g
 LDFLAGS       = -Wl,--no-as-needed -Wall -W -O3 -g -lmpx -lmpxwrappers
 COPTS         = 
 RPM_OPT_FLAGS = 
-LIBS          = $(HOME)/git/safec/libc-mpx.o $(HOME)/git/safec/mpx.o
+LIBS          =
 CC            = gcc
 
 #################################################################

@@ -2,7 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SAFEC := $(HOME)/git/safec
 CC := gcc
 CFLAGS := -mmpx -fcheck-pointer-bounds -g
 LDFLAGS := -Wl,--no-as-needed -lmpx -lmpxwrappers -g 
@@ -24,7 +23,7 @@ endif
 
 -include ../makefile.defs
 
-LIBS += $(SAFEC)/libc-mpx.o $(SAFEC)/mpx.o
+LIBS +=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 
