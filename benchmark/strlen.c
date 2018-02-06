@@ -74,8 +74,8 @@ int main(int argc, char** argv)
 
 	clock_gettime(THE_CLOCK, &time1);
 	for(i = 0; i < runs; i++) {
-#ifdef SAFEC
-		result = __safe_strlen(value);
+#ifdef INTROSPECTION
+		result = __introspection_strlen(value);
 #else
 		result = strlen(value);
 #endif
