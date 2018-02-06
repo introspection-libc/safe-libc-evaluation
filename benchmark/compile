@@ -28,7 +28,7 @@ compile_mpx() {
 }
 
 compile_mpx_introspection() {
-    gcc -DMPX -DINTROSPECTION -include $SAFEC/libc.h -mmpx -fcheck-pointer-bounds -O3 -g $SAFEC/libc-mpx.o $SAFEC/mpx.o "$@"
+    gcc -DMPX -DINTROSPECTION -mmpx -fcheck-pointer-bounds -O3 -g $SAFEC/libc-mpx.o $SAFEC/mpx.o "$@"
 }
 
 compile_clang -o strlen-clang strlen.c
